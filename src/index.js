@@ -15,13 +15,14 @@ import Anfibios from "./components/Anfibios.js";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
+    
      <Routes>
       <Route path="/" element={<App />}>
-        <Route path="Mamiferos" element={<Mamiferos />} />
-        <Route path="Aves" element={<Aves />} />
-        <Route path="Peces" element={<Peces />} />
-        <Route path="Reptiles" element={<Reptiles />} />
-        <Route path="Anfibios" element={<Anfibios />} />
+        <Route path="mamiferos" element={<Mamiferos />} />
+        <Route path="aves" element={<Aves />} />
+        <Route path="peces" element={<Peces />} />
+        <Route path="reptiles" element={<Reptiles />} />
+        <Route path="anfibios" element={<Anfibios />} />
       </Route>
     </Routes>
   </BrowserRouter>

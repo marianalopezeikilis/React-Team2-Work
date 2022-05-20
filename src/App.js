@@ -1,13 +1,18 @@
 import './App.css';
-import Mamiferos from "./components/Mamiferos"
-import Aves from "./components/Aves"
-import Anfibios from "./components/Anfibios"
-import Peces from "./components/Peces"
-import Reptiles from "./components/Reptiles"
+import {Link} from "react-router-dom";
+
 function App() {
+
   return (
     <div >
       
+      <nav>
+      <Link to ="/mamiferos" >Mamiferos</Link>|{" "}
+      <Link to ="/aves">Aves</Link>|{" "}
+      <Link to ="/anfibios">Anfibios</Link>|{" "}
+      <Link to ="/peces">Peces</Link>|{" "}
+      <Link to ="/reptiles">Reptiles</Link>
+      </nav>
     </div>
   );
 }
